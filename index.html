@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <!-- External stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- webpage icon-->
+    <link rel="icon" href="images/github-65.png">
+</head>
+<body>
+    <!-- Container page -->
+    <div class="container">
+        <!-- Header of the page -->
+        <header>Realm</header>
+        <!-- Main container-->
+        <div class="row">
+            <!-- Steps explaining container -->
+            <div class="col-1">
+                <div class="explain">
+                    <strong>Supercharge everything you can be</strong>
+                    <p>Join REALM today</p>
+                </div>
+                <div class="steps">
+                    <img src="images/steps.png">
+                </div>
+            </div>
+            <!---Register or signin container-->
+            <div class="col-2">
+                <div class="sign-in">
+                    <div class="inner-div">
+                        <div class="head">
+                            <h2>Register Now</h2>
+                        </div>
+                        <div class="button-box">
+                            <div id="btn"></div>
+					        <button  type="button" id="toggle-btn-1" onclick="register()">Register</button>
+                            <button  type="button" id="toggle-btn-2" onclick="login()">Login</button>
+                        </div>
+                        <!--Form for the register page-->
+                        <form id="register" class="input-group">
+                            <input type="text" class="input-field"placeholder="Enter name *"required><br>
+                            <input type="email" class="input-field"placeholder="Enter email address *"required><br>
+                            <input type="tel" class="input-field"placeholder="Enter mobile number *"required><br>
+                            <input type="text" class="input-field"placeholder="Enter OTP *"required>
+                            <div class="form-state">
+                                <input type="text" class="input-field"placeholder="State *"required>
+                                <input type="text" class="input-field"placeholder="District *"required>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="check-box">
+                                <span>
+                                    I have read and understood the Policy Notice & providemy consent to REALM to further use &
+                                    transfer the data to our secured servers located in India for purposes stated. *                                
+                                </span>
+                            </div>
+                           <button type="submit" class="submit-btn-1">Register</button>
+                        </form>
+                        <!-- Form for the login page -->
+                        <form id="login"  class="input-group">
+                            <input type="text" class="input-field"placeholder="Your email *"required>
+                            <input type="text" class="input-field"placeholder="Your password *"required>
+                            <div class="remember-pass">
+                                <input type="checkbox" class="check-box"><span> Remember password</span>
+                            </div>
+                           <button type="submit" class="submit-btn-2">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- External javascript link -->
+    <script src="script.js"></script>
+</body>
+</html>
